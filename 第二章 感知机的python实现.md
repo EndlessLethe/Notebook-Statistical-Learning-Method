@@ -1,10 +1,11 @@
 <!--
 @Date:   23-Jan-2018
-@Email:  809810527@qq.com
+@Email:  zengsw_study@qq.com
 @Filename: 第二章 感知机的python实现.md
-@Last modified time: 23-Jan-2018
+@Last modified time: 24-Jan-2018
 @Copyright: ©2017 EndlessLethe. All rights reserved.
 -->
+
 [mathjax]
 <h1> 前言 </h1>
 本来想写一个关于感知机的总结，但如果要深入探讨，涉及的东西实在太多。仅仅浅尝辄止的话，那我就相当于照搬原文，违背了我写文章的初衷。
@@ -32,7 +33,7 @@ L=误分类点到超平面S的距离和
 
 \\(w = w + \eta {y_i}{x_i}\\)
 
-<h1> 算法流程： </h1>
+<h1> 算法流程 </h1>
 输入：w, b；  
 训练：f(x)=sign(wx+b)
 
@@ -68,7 +69,7 @@ def svg(x, y, w, b, learning_rate):
     return params
 ```
 
-<h1> 预测：</h1>
+<h1> 预测</h1>
 输入：x
 输出：y=sign(wx+b)
 ```
@@ -183,3 +184,6 @@ print("Accuracy:%d"  % (cnt / testSize * 100))
 
 <h1> 误分类样本分布 </h1>
 ![Perceptron  Error Event](https://endlesslethe.com/wordpress/wp-content/uploads/2018/01/perceptron-error-event.png)
+
+<h1> 完整代码 </h1>
+[戳我的github](https://github.com/EndlessLethe/Notebook-Statistical-Learning-Method/blob/master/%E7%AC%AC%E4%BA%8C%E7%AB%A0%20%E6%84%9F%E7%9F%A5%E6%9C%BA%E5%AD%A6%E4%B9%A0%E7%AE%97%E6%B3%95.ipynb)
